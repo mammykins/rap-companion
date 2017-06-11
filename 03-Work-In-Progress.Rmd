@@ -1,3 +1,17 @@
-# Technical Details
+# Why RAP?
 
-Now I'll teach you some crazy math, but I need to work it out first...
+Reproducible Analytical Pipelines require a range of tools and techniques to implement that can be a daunting propsect the first time it is considered as an alternative to approach to producing statistics for publications by your team; so why bother learning to RAP?
+
+* Does your team spend too much time moving data between various softwares?
+* Could you reproduce your most recent publication's stats? How about from five years ago?
+* What would your team do with their time if it was freed up from copying and pasting?
+* What proportion of spreadsheets contain errors?
+
+## The current statistics production process
+
+Here we use the production of official statistics in Government; altough this process varies widely perhaps it looks something like this?
+
+```{r fig.align='center', echo=FALSE, include=identical(knitr:::pandoc_to(), 'html'), fig.link='https://gdsdata.blog.gov.uk/2017/03/27/reproducible-analytical-pipeline/'}
+knitr::include_graphics('images/messy_pipeline.png', dpi = NA)
+```
+
