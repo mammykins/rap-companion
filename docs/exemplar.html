@@ -33,7 +33,7 @@
   
   
 <link rel="prev" href="why.html">
-
+<link rel="next" href="open.html">
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -135,6 +135,18 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 </ul></li>
 <li class="chapter" data-level="4.3" data-path="exemplar.html"><a href="exemplar.html#chapter-plenary"><i class="fa fa-check"></i><b>4.3</b> Chapter plenary</a></li>
 </ul></li>
+<li class="chapter" data-level="5" data-path="open.html"><a href="open.html"><i class="fa fa-check"></i><b>5</b> Open Source rather than proprietary</a></li>
+<li class="chapter" data-level="6" data-path="vs.html"><a href="vs.html"><i class="fa fa-check"></i><b>6</b> Version Control</a><ul>
+<li class="chapter" data-level="6.1" data-path="vs.html"><a href="vs.html#introduction"><i class="fa fa-check"></i><b>6.1</b> Introduction</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="package.html"><a href="package.html"><i class="fa fa-check"></i><b>7</b> Packaging Code</a></li>
+<li class="chapter" data-level="8" data-path="test.html"><a href="test.html"><i class="fa fa-check"></i><b>8</b> Unit test</a></li>
+<li class="chapter" data-level="9" data-path="travis.html"><a href="travis.html"><i class="fa fa-check"></i><b>9</b> Automated Testing</a></li>
+<li class="chapter" data-level="10" data-path="code-cover.html"><a href="code-cover.html"><i class="fa fa-check"></i><b>10</b> Code coverage</a></li>
+<li class="chapter" data-level="11" data-path="dependency-management-dep.html"><a href="dependency-management-dep.html"><i class="fa fa-check"></i><b>11</b> Dependency management {dep}</a></li>
+<li class="chapter" data-level="12" data-path="qa-data.html"><a href="qa-data.html"><i class="fa fa-check"></i><b>12</b> Quality Assured data</a></li>
+<li class="chapter" data-level="13" data-path="pub.html"><a href="pub.html"><i class="fa fa-check"></i><b>13</b> Producing the publication</a></li>
+<li class="chapter" data-level="14" data-path="final.html"><a href="final.html"><i class="fa fa-check"></i><b>14</b> Final Thoughts</a></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
 
@@ -161,7 +173,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <p>In this Chapter we demonstrate a RAP package developed in collaboration with the Department for Culture Media and Sport (DCMS).</p>
 <div id="package-purpose" class="section level2">
 <h2><span class="header-section-number">4.1</span> Package Purpose</h2>
-<p>In this exemplar project Matt Upson aimed at a high level of automation to demonstrate what is possible, and because DCMS had a skilled data scientist on hand to maintain and develop the project. Nonetheless, in the course of the work, statisticians at DCMS continue to undertake training in R, and the <a href="https://data.blog.gov.uk/">Better Use of Data Team</a> spent time to ensure that the software development practices such as managing <a href="https://www.gov.uk/service-manual/technology/managing-software-dependencies">software dependencies</a>, <a href="https://www.gov.uk/service-manual/technology/maintaining-version-control-in-coding">version control</a>, <a href="http://r-pkgs.had.co.nz/">package development</a>, <a href="http://r-pkgs.had.co.nz/tests.html">unit testing</a>, style <a href="http://adv-r.had.co.nz/Style.html">guide</a> and <a href="https://www.r-bloggers.com/continuous-integration-for-r-packages/">continuous integration</a> are embedded within the team that owns the publication.</p>
+<p>In this exemplar project Matt Upson aimed at a high level of automation to demonstrate what is possible, and because DCMS had a skilled data scientist on hand to maintain and develop the project. Nonetheless, in the course of the work, statisticians at DCMS continue to undertake training in R, and the <a href="https://data.blog.gov.uk/">Better Use of Data Team</a> spent time to ensure that the software development practices such as managing <a href="https://www.gov.uk/service-manual/technology/managing-software-dependencies">software dependencies</a>, <a href="https://www.gov.uk/service-manual/technology/maintaining-version-control-in-coding">version control</a>, <a href="http://r-pkgs.had.co.nz/">package development</a>, <a href="http://r-pkgs.had.co.nz/tests.html">unit testing</a>, style <a href="http://adv-r.had.co.nz/Style.html">guide</a>, <a href="https://www.gov.uk/service-manual/technology/making-source-code-open-and-reusable">open by default</a> and <a href="https://www.r-bloggers.com/continuous-integration-for-r-packages/">continuous integration</a> are embedded within the team that owns the publication.</p>
 <p>We’re continuing to support DCMS in the development of this prototype pipeline, with the expectation that it will be used operationally in 2017. If you want to learn more about this project, the source code for the eesectors R package is maintained on <a href="https://github.com/ukgovdatascience/eesectors">GitHub.com</a>. The README provides instructions on how to test the package using the openly published data from the 2016 publication.</p>
 </div>
 <div id="eesectors-package-exploration" class="section level2">
@@ -451,20 +463,13 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 
 </div>
 </div>
-
-
-
-
-
-
-
             </section>
 
           </div>
         </div>
       </div>
-<a href="why.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-
+<a href="why.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="open.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

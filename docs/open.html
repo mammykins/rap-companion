@@ -32,8 +32,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   
   
-<link rel="prev" href="intro.html">
-<link rel="next" href="why.html">
+<link rel="prev" href="exemplar.html">
+<link rel="next" href="vs.html">
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -167,94 +167,20 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="ethics" class="section level1">
-<h1><span class="header-section-number">Chapter 2</span> Ethical Considerations</h1>
-<p>The RAP is considered Data Science in that it involves an overlap of Computer Science, Statistics and Expert Domain Knowledge.</p>
-<p><strong>Data science ethics are important.</strong></p>
-<p>We consult the <a href="https://www.gov.uk/government/publications/data-science-ethical-framework">ethical framework</a> before proceeding. We use the recommended Six Key Principles to structure our thinking:</p>
-<ol style="list-style-type: decimal">
-<li>Start with clear user need and public benefit</li>
-<li>Use data and tools which have the minimum intrusion necessary</li>
-<li>Create robust data science models</li>
-<li>Be alert to public perceptions</li>
-<li>Be as open and accountable as possible</li>
-<li>Keep data secure</li>
-</ol>
-<p><em>Fundamentally, the public benefit of doing the project needs to be balanced against the risks of doing so.</em></p>
-<div id="extra-detail" class="section level2">
-<h2><span class="header-section-number">2.1</span> Extra detail</h2>
-<p>Working through the quick checklist in the Ethical Framework we can identify those Principles that are more pertinent to a RAP project. We discuss some of these considerations in more detail here and the questions you should ask your team and stakeholders before proceeding with development.</p>
-<div id="start-with-clear-user-need-and-public-benefit" class="section level3">
-<h3><span class="header-section-number">2.1.1</span> Start with clear user need and public benefit</h3>
-<ul>
-<li>How does the department and public benefit?</li>
-<li>Is this a vanity project?</li>
-<li>How many statistical reports does your team produce?</li>
-<li>What proportion of their time does this take up?</li>
-<li>How much copy and pasting (data movement) between softwares is involved?</li>
-<li>Have you demonstrated the benefit to your team? (<a href="https://gdsengagement.blog.gov.uk/2016/11/04/what-we-mean-when-we-say-show-the-thing/">Show the thing.</a>)</li>
-</ul>
-<blockquote>
-<p>RAP has reduced the time taken to produce a report from two months to two weeks. - placeholder</p>
-</blockquote>
-</div>
-<div id="use-data-and-tools-which-have-the-minimum-intrusion-necessary" class="section level3">
-<h3><span class="header-section-number">2.1.2</span> Use data and tools which have the minimum intrusion necessary</h3>
-<ul>
-<li>How intrusive and identifiable is the data you are working with?</li>
-<li>What is the minimum data necessary to achieve the user benefit?</li>
-<li>Do you really need to use sensitive data (de-identify or aggregate it)?</li>
-<li>Have you made synthetic data, that looks like real data, for the RAP software development?</li>
-<li>If identifying individuals, how widely are you searching personal data?</li>
-</ul>
-</div>
-<div id="create-robust-data-science-models" class="section level3">
-<h3><span class="header-section-number">2.1.3</span> Create robust data science models</h3>
-<ul>
-<li>What is the quality of the data?</li>
-<li>How representative is the data? (what are the biases?)</li>
-<li>Are there any automated decisions?</li>
-<li>What safeguards can be implemented to validate any automatic decision making?</li>
-<li>What is the risk that someone will suffer a negative unintended consequence as a result of the project?</li>
-<li>What are all the data checking and validation steps that occur (if you can explain it to a human you should be able to code it)?</li>
-</ul>
-</div>
-<div id="be-alert-to-public-perceptions" class="section level3">
-<h3><span class="header-section-number">2.1.4</span> Be alert to public perceptions</h3>
-<ul>
-<li>If personal data for operational purposes, how compatible was it with the reason collected?</li>
-<li>Do the public agree with what you are doing?</li>
-<li>Automation often has negative conotations - why is RAP useful to everyone involved?</li>
-</ul>
-</div>
-<div id="be-as-open-and-accountable-as-possible" class="section level3">
-<h3><span class="header-section-number">2.1.5</span> Be as open and accountable as possible</h3>
-<ul>
-<li>How open can you be about the project?</li>
-<li>How much oversight and accountability is there throughout the project?</li>
-<li>Can you explain in plain English why you are developing a RAP?</li>
-<li>Can you get colleagues from other departments to review your <a href="https://help.github.com/articles/about-pull-requests/">Pull Requests</a>?</li>
-</ul>
-</div>
-<div id="keep-data-secure" class="section level3">
-<h3><span class="header-section-number">2.1.6</span> Keep data secure</h3>
-<ul>
-<li>How secure is your data?</li>
-<li>You will be using a version control software like <a href="https://gdstechnology.blog.gov.uk/2014/01/27/how-we-use-github/">Git</a>. How will you prevent your RAP developers from accidentally pushing sensitive data to <a href="https://stackoverflow.com/questions/13321556/difference-between-git-and-github">Github</a>?</li>
-<li>Are you following <a href="https://gdsdata.blog.gov.uk/2017/03/27/reproducible-analytical-pipeline/">GDS best practice</a>?</li>
-<li>Have you considered using tools, like <a href="https://github.com/ukgovdatascience/dotfiles">Git hooks</a>, to prevent the unintended publication of sensitive data on Github?</li>
-</ul>
+<div id="open" class="section level1">
+<h1><span class="header-section-number">Chapter 5</span> Open Source rather than proprietary</h1>
+<p>Open source languages such as <a href="https://en.wikipedia.org/wiki/Python_(programming_language)">Python</a> and <a href="https://www.r-project.org/about.html">R</a> are increasing in popularity across government. One advantage of using these tools is that we can reduce the number of steps where the data needs to be moved from one program (or format) into another. This is in line with the principle of reproducibility given in guidance on producing quality analysis for government (the <a href="https://www.gov.uk/government/publications/the-aqua-book-guidance-on-producing-quality-analysis-for-government">AQUA book</a>), as the entire process can be represented as a single step in code, greatly reducing the likelihood of manual transcription errors.</p>
+<p>Chapter <a href="why.html#why">3</a> discussed why spreadsheets are dangerous. Moving away from proprietary software, towards Open Source, may also have the additional benefit of being more compatable with tried and tested software development tools and techniques (as well as the obvious no longer needing to pay for it).</p>
+<p>In GDS’s project with DCMS described in Chapter <a href="exemplar.html#exemplar">4</a>, we decided to use the R language, however we could equally have chosen to use Python or another language entirely: the techniques we outline in this book are language agnostic.</p>
 
-</div>
-</div>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-<a href="intro.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="why.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="exemplar.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="vs.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
