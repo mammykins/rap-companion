@@ -31,6 +31,10 @@ Prior to commiting to RAP development in your team ask yourself two questions:
 1. Is there a genuine user need for this new product/service?
 2. Does another product/service exist that you can re-use or adapt?^[There's probably some code you can adapt on Github, such as the [eesectors pacakge](https://github.com/ukgovdatascience/eesectors)]
 
+## Getting the balance right
+
+Whilst incredibly powerful, these approaches should not be seen as panacea for all the difficulties of statistics production: however, implementing even a few of these techniques can drive benefits in auditability, speed, quality, and knowledge transfer. There is a balance to be struck between ease of maintenance and the level of automation: this is likely to differ for every publication or team. These techniques are however tried and tested for software development and most already feature in the [Service Manual](https://www.gov.uk/service-manual/technology): in this project we have just applied these methodologies to a new area.
+
 ## Inspiration
 
 This book was inspired by and draws heavily from a Government Digital Service [blog post](https://gdsdata.blog.gov.uk/2017/03/27/reproducible-analytical-pipeline/) by Dr. Matthew Upson.  
