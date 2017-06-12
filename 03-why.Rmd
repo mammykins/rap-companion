@@ -19,9 +19,20 @@ Broadly speaking, data are extracted from a datastore (whether it is a [data lak
 
 ### The problem with this approach
 
-Errors in [spreadsheets](http://faculty.tuck.dartmouth.edu/images/uploads/faculty/serp/Errors.pdf).
-Copy and pasting.
-Lack of proper version control.
-Testing and QA normally happens at the end.
+Errors in [spreadsheets](http://faculty.tuck.dartmouth.edu/images/uploads/faculty/serp/Errors.pdf) are common due to [human error](https://arxiv.org/abs/1602.02601)^[Research on spreadsheet errors is substantial, compelling, and unanimous. It has three simple conclusions. The first is that spreadsheet errors are rare on a per-cell basis, but in large programs, at least one incorrect bottom-line value is very likely to be present. The second is that errors are extremely difficult to detect and correct. The third is that spreadsheet developers and corporations are highly overconfident in the accuracy of their spreadsheets.]. We can mitigate these issues by minimising the role humans play in the tasks that they perform poorly^[Tasks that machines excel at]. This will free up human time to focus on complex tasks such as the interpretation of the statistics and communicating the implications of these findings to others.  
+
+Other issues are: 
+
+* Copy and pasting.
+* Lack of proper version control.
+* Testing and QA normally happens at the end.
 
 A key element in this process is quality assurance (QA). Each publication is meticulously checked to ensure the accuracy of the statistics being produced. This may take place throughout the production process or at the end prior to publication. Traditionally, QA has been a manual process which can take up a significant portion of the overall production time of a publication, as any changes will require the manual process of production to be repeated.
+
+### Desired Reproducible Analytical Pipeline
+
+Our analytical pipeline should have all the hallmarks of good scientific practice - it should be reproducible.  
+
+```{r fig.align='center', echo=FALSE, include=identical(knitr:::pandoc_to(), 'html'), fig.link='https://gdsdata.blog.gov.uk/2017/03/27/reproducible-analytical-pipeline/'}
+knitr::include_graphics('images/rap.png', dpi = NA)
+```

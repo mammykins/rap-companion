@@ -124,6 +124,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <li class="chapter" data-level="3" data-path="why.html"><a href="why.html"><i class="fa fa-check"></i><b>3</b> Why RAP?</a><ul>
 <li class="chapter" data-level="3.1" data-path="why.html"><a href="why.html#the-current-statistics-production-process"><i class="fa fa-check"></i><b>3.1</b> The current statistics production process</a><ul>
 <li class="chapter" data-level="3.1.1" data-path="why.html"><a href="why.html#the-problem-with-this-approach"><i class="fa fa-check"></i><b>3.1.1</b> The problem with this approach</a></li>
+<li class="chapter" data-level="3.1.2" data-path="why.html"><a href="why.html#desired-reproducible-analytical-pipeline"><i class="fa fa-check"></i><b>3.1.2</b> Desired Reproducible Analytical Pipeline</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="4" data-path="exemplar.html"><a href="exemplar.html"><i class="fa fa-check"></i><b>4</b> Exemplar RAP</a><ul>
@@ -183,11 +184,29 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <p>Broadly speaking, data are extracted from a datastore (whether it is a <a href="https://en.wikipedia.org/wiki/Data_lake">data lake</a>, <a href="https://en.wikipedia.org/wiki/Database">database</a>, spreadsheet, or <a href="https://en.wikipedia.org/wiki/Flat_file_database">flat file</a>), and are manipulated in a proprietary statistical software package, and possibly in proprietary spreadsheet software. Formatted tables are often then ‘copy and pasted’ into a word processor, before being converted to pdf format, and finally published to <a href="https://www.gov.uk/">GOV.UK</a>. This is quite a simplification, as statistical publications are usually produced by several people, so this process is likely to be happening in parallel many times.</p>
 <div id="the-problem-with-this-approach" class="section level3">
 <h3><span class="header-section-number">3.1.1</span> The problem with this approach</h3>
-<p>Errors in <a href="http://faculty.tuck.dartmouth.edu/images/uploads/faculty/serp/Errors.pdf">spreadsheets</a>. Copy and pasting. Lack of proper version control. Testing and QA normally happens at the end.</p>
+<p>Errors in <a href="http://faculty.tuck.dartmouth.edu/images/uploads/faculty/serp/Errors.pdf">spreadsheets</a> are common due to <a href="https://arxiv.org/abs/1602.02601">human error</a><a href="#fn3" class="footnoteRef" id="fnref3"><sup>3</sup></a>. We can mitigate these issues by minimising the role humans play in the tasks that they perform poorly<a href="#fn4" class="footnoteRef" id="fnref4"><sup>4</sup></a>. This will free up human time to focus on complex tasks such as the interpretation of the statistics and communicating the implications of these findings to others.</p>
+<p>Other issues are:</p>
+<ul>
+<li>Copy and pasting.</li>
+<li>Lack of proper version control.</li>
+<li>Testing and QA normally happens at the end.</li>
+</ul>
 <p>A key element in this process is quality assurance (QA). Each publication is meticulously checked to ensure the accuracy of the statistics being produced. This may take place throughout the production process or at the end prior to publication. Traditionally, QA has been a manual process which can take up a significant portion of the overall production time of a publication, as any changes will require the manual process of production to be repeated.</p>
+</div>
+<div id="desired-reproducible-analytical-pipeline" class="section level3">
+<h3><span class="header-section-number">3.1.2</span> Desired Reproducible Analytical Pipeline</h3>
+<p>Our analytical pipeline should have all the hallmarks of good scientific practice - it should be reproducible.</p>
+<p><a href="https://gdsdata.blog.gov.uk/2017/03/27/reproducible-analytical-pipeline/" target="_blank"><img src="images/rap.png" style="display: block; margin: auto;" /></a></p>
 
 </div>
 </div>
+</div>
+<div class="footnotes">
+<hr />
+<ol start="3">
+<li id="fn3"><p>Research on spreadsheet errors is substantial, compelling, and unanimous. It has three simple conclusions. The first is that spreadsheet errors are rare on a per-cell basis, but in large programs, at least one incorrect bottom-line value is very likely to be present. The second is that errors are extremely difficult to detect and correct. The third is that spreadsheet developers and corporations are highly overconfident in the accuracy of their spreadsheets.<a href="why.html#fnref3">↩</a></p></li>
+<li id="fn4"><p>Tasks that machines excel at<a href="why.html#fnref4">↩</a></p></li>
+</ol>
 </div>
             </section>
 
