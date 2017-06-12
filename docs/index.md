@@ -24,8 +24,13 @@ Producing official statistics for publications is a key function of many teams a
 
 > Something is better than nothing. 
 
-This is NOT TRUE in the agile world; consider the opportunity cost^[the loss of other alternatives when one alternative is chosen].
+This is NOT TRUE in the [agile](https://en.wikipedia.org/wiki/Agile_software_development) world; consider the opportunity cost^[the loss of other alternatives when one alternative is chosen].  
+
+Prior to commiting to RAP development in your team ask yourself two questions:  
+
+1. Is there a genuine user need for this new product/service?
+2. Does another product/service exist that you can re-use or adapt?^[There's probably some code you can adapt on Github, such as the [eesectors pacakge](https://github.com/ukgovdatascience/eesectors)]
 
 ## Inspiration
 
-This book was inspired by and draws heavily from a Government Digital Service [blog post](https://gdsdata.blog.gov.uk/2017/03/27/reproducible-analytical-pipeline/) by Dr. Matthew Upson in the Better Use of Data team.  
+This book was inspired by and draws heavily from a Government Digital Service [blog post](https://gdsdata.blog.gov.uk/2017/03/27/reproducible-analytical-pipeline/) by Dr. Matthew Upson.  
