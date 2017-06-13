@@ -35,9 +35,8 @@ Installation means the package is on our computer but it is not loaded into the 
 
 ```{r}
 
-devtools::install_github('ukgovdatascience/eesectors')
+#  devtools::install_github('ukgovdatascience/eesectors')
 library(eesectors)
-library(tidyverse)
 
 ```
 
@@ -128,7 +127,7 @@ It's not actually an S4 object, by slots the author means a list of objects. Thi
 The input, which is likely a bunch of [not tidy or messy](https://cran.r-project.org/web/packages/tidyr/vignettes/tidy-data.html) spreadsheets needs to be wrangled and aggregated (if necessary) for input into the functions prefixed by `figure`.
 
 ```{r}
-glimpse(GVA_by_sector_2016)
+dplyr::glimpse(GVA_by_sector_2016)
 ```
 
 #### The R output

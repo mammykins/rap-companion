@@ -3,7 +3,7 @@ Title: Reproducible Analytical Pipeline manual
 Version: 0.0.1
 Imports: 
   bookdown (>= 0.4),
-  tidyverse
+  dplyr (>= 0.4)
 Suggests:
     testthat (>= 1.0.2),
     knitr (>= 1.15.1),
@@ -18,6 +18,7 @@ BugReports: https://github.com/mammykins/rap-companion/issues
 Authors@R: c(
     person("Matthew", "Gregory", email = "matthew.gregory@digital.cabinet-office.gov.uk", role = c("aut", "cre")),
     person("Matthew", "Upson", email = "matthew.upson@digital.cabinet-office.gov.uk", role = "ctb"))
-Description: More about what it does (maybe more than one line).
-License: What license is it under?
+Description: An implementation of a Reproducible Analytical Pipeline in R. It elucidates 
+good software development practice using an exemplar package produced by a UK Government Department.
+License: file LICENSE
 LazyData: TRUE
