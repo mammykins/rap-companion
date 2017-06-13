@@ -35,6 +35,7 @@ Installation means the package is on our computer but it is not loaded into the 
 
 ```{r}
 
+devtools::install_github('ukgovdatascience/eesectors')
 library(eesectors)
 library(tidyverse)
 
