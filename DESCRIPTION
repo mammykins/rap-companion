@@ -2,7 +2,7 @@ Package: placeholder
 Title: Reproducible Analytical Pipeline manual.
 Version: 0.0.1
 Imports: bookdown (>= 0.4)
-Remotes: ukgovdatascience/eesectors
+Remotes: github::ukgovdatascience/eesectors
 Depends:
     R (>= 3.3.1)
 URL: https://github.com/mammykins/rap-companion
