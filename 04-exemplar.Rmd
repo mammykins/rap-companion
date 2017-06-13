@@ -63,7 +63,7 @@ If you look at the functions within the package within R Studio using the packag
 The `GVA_by_sector_2016` provides test data to work with during development. This will be important for the development of other packages for different reports. You need a precise understanding of how you go from raw data, to aggregated data (such as `GVA_by_sector_2016`) to the final figure. What are your inputs (arguments) and outputs? In some cases where your master data is stored in a particularly difficult for a machine to read you may prefer having a human to this extraction step.  
 
 ```{r}
-glimpse(GVA_by_sector_2016)
+dplyr::glimpse(GVA_by_sector_2016)
 x <- GVA_by_sector_2016
 ```
 

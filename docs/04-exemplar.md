@@ -35,15 +35,7 @@ Installation means the package is on our computer but it is not loaded into the 
 
 
 ```r
-devtools::install_github('ukgovdatascience/eesectors')
-```
-
-```
-## Skipping install of 'eesectors' from a github remote, the SHA1 (5e91f359) has not changed since last install.
-##   Use `force = TRUE` to force installation
-```
-
-```r
+#  devtools::install_github('ukgovdatascience/eesectors')
 library(eesectors)
 ```
 
@@ -52,28 +44,6 @@ library(eesectors)
 ## Economic Estimates for DCMS Sectors Statistical First Release
 ## (SFR). For more information visit:
 ## https://github.com/ukgovdatascience/eesectors
-```
-
-```r
-library(tidyverse)
-```
-
-```
-## Loading tidyverse: ggplot2
-## Loading tidyverse: tibble
-## Loading tidyverse: tidyr
-## Loading tidyverse: readr
-## Loading tidyverse: purrr
-## Loading tidyverse: dplyr
-```
-
-```
-## Conflicts with tidy packages ----------------------------------------------
-```
-
-```
-## filter(): dplyr, stats
-## lag():    dplyr, stats
 ```
 
 This makes all the functions within the package available for use. It also provides us with some R [data objects](https://github.com/ukgovdatascience/eesectors/tree/master/data), such as aggregated data sets ready for visualisations or analysis within the report.  
@@ -100,7 +70,7 @@ The `GVA_by_sector_2016` provides test data to work with during development. Thi
 
 
 ```r
-glimpse(GVA_by_sector_2016)
+dplyr::glimpse(GVA_by_sector_2016)
 ```
 
 ```
@@ -401,7 +371,7 @@ The input, which is likely a bunch of [not tidy or messy](https://cran.r-project
 
 
 ```r
-glimpse(GVA_by_sector_2016)
+dplyr::glimpse(GVA_by_sector_2016)
 ```
 
 ```

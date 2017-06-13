@@ -14,4 +14,4 @@ library(eesectors)
 ```
 
 
-Linking the documentation to the code makes everything much easier to understand, and can help to minimising the time taken to bring new team members up to speed. This all meets the requirements of the AQUA book in that all assumptions and constraints can be described in the package documentation asssociated tied to the relevant code.  
+Linking the documentation to the code makes everything much easier to understand, and can help to minimising the time taken to bring new team members up to speed. This all meets the requirements of the [AQUA](https://www.gov.uk/government/publications/the-aqua-book-guidance-on-producing-quality-analysis-for-government) book in that all assumptions and constraints can be described in the package documentation asssociated tied to the relevant code.  

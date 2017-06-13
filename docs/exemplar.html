@@ -191,24 +191,12 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <div id="loading-the-package" class="section level3">
 <h3><span class="header-section-number">4.2.2</span> Loading the package</h3>
 <p>Installation means the package is on our computer but it is not loaded into the computer’s working memory. We also load any additional packages that might be useful for exploring the package or data therein.</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">devtools::<span class="kw">install_github</span>(<span class="st">&#39;ukgovdatascience/eesectors&#39;</span>)</code></pre></div>
-<pre><code>## Skipping install of &#39;eesectors&#39; from a github remote, the SHA1 (5e91f359) has not changed since last install.
-##   Use `force = TRUE` to force installation</code></pre>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(eesectors)</code></pre></div>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co">#  devtools::install_github(&#39;ukgovdatascience/eesectors&#39;)</span>
+<span class="kw">library</span>(eesectors)</code></pre></div>
 <pre><code>## eesectors: Reproducible Analytical Pipeline (RAP) for the
 ## Economic Estimates for DCMS Sectors Statistical First Release
 ## (SFR). For more information visit:
 ## https://github.com/ukgovdatascience/eesectors</code></pre>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(tidyverse)</code></pre></div>
-<pre><code>## Loading tidyverse: ggplot2
-## Loading tidyverse: tibble
-## Loading tidyverse: tidyr
-## Loading tidyverse: readr
-## Loading tidyverse: purrr
-## Loading tidyverse: dplyr</code></pre>
-<pre><code>## Conflicts with tidy packages ----------------------------------------------</code></pre>
-<pre><code>## filter(): dplyr, stats
-## lag():    dplyr, stats</code></pre>
 <p>This makes all the functions within the package available for use. It also provides us with some R <a href="https://github.com/ukgovdatascience/eesectors/tree/master/data">data objects</a>, such as aggregated data sets ready for visualisations or analysis within the report.</p>
 <blockquote>
 <p>Packages are the fundamental units of reproducible R code. They include reusable R functions, the documentation that describes how to use them, and sample data. - Hadely Wickham</p>
@@ -227,7 +215,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <p>This package seems to work by taking the necessary data inputs as arguments in a function then outputting the relevant figures. The names of the functions match the figures they produce. Prior to this step we have to get the data in the correct format.</p>
 <p>If you look at the functions within the package within R Studio using the package navigator it is evident that there are a function of families dedicated to reading Excel spreadsheets and collecting the data in a tidy .Rds format. These are given the funciton name-prefix of <code>extract_</code> (try to give your functions <a href="http://adv-r.had.co.nz/Style.html">good names</a>).</p>
 <p>The <code>GVA_by_sector_2016</code> provides test data to work with during development. This will be important for the development of other packages for different reports. You need a precise understanding of how you go from raw data, to aggregated data (such as <code>GVA_by_sector_2016</code>) to the final figure. What are your inputs (arguments) and outputs? In some cases where your master data is stored in a particularly difficult for a machine to read you may prefer having a human to this extraction step.</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">glimpse</span>(GVA_by_sector_2016)</code></pre></div>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">dplyr::<span class="kw">glimpse</span>(GVA_by_sector_2016)</code></pre></div>
 <pre><code>## Observations: 54
 ## Variables: 3
 ## $ sector &lt;fctr&gt; creative, culture, digital, gambling, sport, telecoms,...
@@ -364,7 +352,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <div id="the-input" class="section level4">
 <h4><span class="header-section-number">4.2.3.5</span> The input</h4>
 <p>The input, which is likely a bunch of <a href="https://cran.r-project.org/web/packages/tidyr/vignettes/tidy-data.html">not tidy or messy</a> spreadsheets needs to be wrangled and aggregated (if necessary) for input into the functions prefixed by <code>figure</code>.</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">glimpse</span>(GVA_by_sector_2016)</code></pre></div>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">dplyr::<span class="kw">glimpse</span>(GVA_by_sector_2016)</code></pre></div>
 <pre><code>## Observations: 54
 ## Variables: 3
 ## $ sector &lt;fctr&gt; creative, culture, digital, gambling, sport, telecoms,...
