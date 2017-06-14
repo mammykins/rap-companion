@@ -1,10 +1,10 @@
 --- 
 title: "RAP Companion"
 author: ["Matthew Gregory, Matthew Upson"]
-date: "2017-06-13"
+date: "2017-06-14"
 site: bookdown::bookdown_site
 documentclass: book
-bibliography: [book.bib]
+# bibliography: [book.bib]
 biblio-style: apalike
 link-citations: yes
 cover-image: "images/cover.png"
