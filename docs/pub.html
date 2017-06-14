@@ -155,7 +155,9 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <li class="chapter" data-level="10" data-path="code-cover.html"><a href="code-cover.html"><i class="fa fa-check"></i><b>10</b> Code coverage</a></li>
 <li class="chapter" data-level="11" data-path="dependency-management-dep.html"><a href="dependency-management-dep.html"><i class="fa fa-check"></i><b>11</b> Dependency management {dep}</a></li>
 <li class="chapter" data-level="12" data-path="qa-data.html"><a href="qa-data.html"><i class="fa fa-check"></i><b>12</b> Quality Assured data</a></li>
-<li class="chapter" data-level="13" data-path="pub.html"><a href="pub.html"><i class="fa fa-check"></i><b>13</b> Producing the publication</a></li>
+<li class="chapter" data-level="13" data-path="pub.html"><a href="pub.html"><i class="fa fa-check"></i><b>13</b> Producing the publication</a><ul>
+<li class="chapter" data-level="13.1" data-path="pub.html"><a href="pub.html#further-reading-1"><i class="fa fa-check"></i><b>13.1</b> Further Reading</a></li>
+</ul></li>
 <li class="chapter" data-level="14" data-path="final.html"><a href="final.html"><i class="fa fa-check"></i><b>14</b> Final Thoughts</a></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
@@ -182,9 +184,14 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <blockquote>
 <p>R Markdown provides an unified authoring framework for data science, combining your code, its results, and your prose commentary. R Markdown documents are fully reproducible and support dozens of output formats, like PDFs, Word files, slideshows, and more. - Hadley Wikcham, R for Data Science</p>
 </blockquote>
+<p>Everything I have talked about so far is to do with the production of the statistics themselves, not preparation of the final publication, but there are tools that can help with this too. In our project with DCMS we plan to use <a href="http://rmarkdown.rstudio.com/">Rmarkdown</a> (a flavour of <a href="https://en.wikipedia.org/wiki/Markdown">markdown</a>) to incorporate the R code into the same document as the text of the publication.</p>
+<p>Working in this way means that we can do all of the operations in a single file, so we have no problems with ensuring that our tables or figures are synced with the latest version of the text: everything can be produced in a single file. We can even produce templates with boilerplate text like: ‘this measure increased by X%’, and then automatically populate the X with the correct values when we run the code.</p>
+<div id="further-reading-1" class="section level2">
+<h2><span class="header-section-number">13.1</span> Further Reading</h2>
 <p>You can write individual chapters using <a href="http://r4ds.had.co.nz/r-markdown.html">R markdown</a>, as one file per Chapter.</p>
 <p>Alternatively you can write the whole publication using <a href="https://bookdown.org/yihui/bookdown/">bookdown</a>. For a basic start in bookdown try this <a href="http://seankross.com/2016/11/17/How-to-Start-a-Bookdown-Book.html">blog post</a> (we wrote this book using this to kick things off).</p>
 
+</div>
 </div>
             </section>
 
