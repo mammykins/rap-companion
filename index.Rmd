@@ -10,8 +10,8 @@ link-citations: yes
 cover-image: images/cover.png
 twitter-handle: mammykins_
 github-repo: mammykins/rap-companion
-url: https://github.com/mammykins/rap-companion
-description: "A technical communication document intended to give assistance to people developing a Reproducible Analytical Pipeline."
+# url: https://github.com/mammykins/rap-companion
+description: "A technical communication document intended to give assistance to people developing a Reproducible Analytical Pipeline using DataOps."
 ---
 
 # Preface {-}
