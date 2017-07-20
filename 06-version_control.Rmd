@@ -6,7 +6,7 @@ Few software engineers would embark on a new project without using some sort of 
 
 Whilst git can be used locally on a single machine, or many networked machines, git can also be hooked up to free cloud services such as [GitHub](https://github.com/), [GitLab](https://about.gitlab.com/), or Bitbucket(https://bitbucket.org/). Each of these services provides hosting for your version control repository, and makes the code open and easy to share. The entire project we are working on with DCMS can be seen on [GitHub](https://github.com/ukgovdatascience/eesectors).
 
-```{r fig.align='center', echo=FALSE, include=identical(knitr:::pandoc_to(), 'html'), fig.link='https://gdsdata.blog.gov.uk/2017/03/27/reproducible-analytical-pipeline/'}
+```{r fig.align='center', echo=FALSE, include=identical(knitr:::pandoc_to(), 'html'), fig.link='https://github.com/ukgovdatascience/rap_companion/commits/master'}
 knitr::include_graphics('images/pull_request.png', dpi = NA)
 ```
 

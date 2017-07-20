@@ -7,7 +7,7 @@ documentclass: book
 # bibliography: [book.bib]  #  Causes doc conversion error
 biblio-style: apalike
 link-citations: yes
-cover-image: "images/cover.png"
+cover-image: images/cover.png
 twitter-handle: mammykins_
 github-repo: mammykins/rap-companion
 url: https://github.com/mammykins/rap-companion
