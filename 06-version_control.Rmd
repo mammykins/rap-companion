@@ -80,5 +80,4 @@ We give a simple workflow here (assuming you are collaborating on Github with a 
 
 8. You have a new master on Github. Pull it to your local machine and the development cycle starts again!  
 
-CAVEAT: this workflow is not appropriate for large open collaborations, where [fork and pull](https://help.github.com/articles/fork-a-repo/) is preferred.  
-
+CAVEAT: this workflow is not appropriate for large open collaborations, where fork and pull is preferred.  
