@@ -150,7 +150,7 @@ git checkout master
 git merge upstream/master
 
 # If there were any new commits, rebase your development branch
-git checkout newfeature
+git checkout feature/new_branch
 git rebase master
 ```
 
@@ -166,9 +166,7 @@ This will open up a text editor where you can specify which commits to squash.
 
 ### Fixing issues
 
-If your pull request fixes a specific issue the Github can automatically close that issue based on the commit message as [described by Hadley Wickham](http://r-pkgs.had.co.nz/git.html#github-issues).   
-
-> A useful technique is closing issues from a commit message. Just put Closes *#<issue number>* somewhere in your commit message and GitHub will close the issue for you when you next push. The best thing about closing issues this way is that it makes a link from the issue to the commit. This is useful if you ever have to come back to the bug and want to see exactly what you did to fix it. You can also link to issues without closing them; just refer to *#<issue number>*.
+If your pull request fixes a specific issue, Github can automatically close that issue based on the commit message as [described by Hadley Wickham](http://r-pkgs.had.co.nz/git.html#github-issues).   
 
 ### Submitting
 
@@ -182,7 +180,7 @@ The review of the pull request will be carried out by the owners of the repo fro
 
 ## Credit
 
-If you contribute a significant amount to this project we will happily add you to the list of authors, crediting you for your efforts and recognising how you are engaged with fulfilling your [Civil Servie objectives](https://www.gov.uk/government/publications/civil-service-competency-framework).  
+If you contribute a significant amount to this project we will happily add you to the list of authors, crediting you for your efforts and recognising how you are engaged with fulfilling your [Civil Service objectives](https://www.gov.uk/government/publications/civil-service-competency-framework).  
 
 ## Other things
 
