@@ -20,7 +20,6 @@ install:
   - sudo dpkg -i pandoc-1.18-1-amd64.deb
   - sudo apt-get install -f
   - Rscript -e "if (!require('devtools')) install.packages('devtools')"
-  - Rscript -e "devtools::install_github('mammykins/bookdown')"
   - Rscript -e "devtools::install_github('ukgovdatascience/eesectors')"
   - Rscript -e "devtools::install_github('ukgovdatascience/govstyle')"
 
