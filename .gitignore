@@ -38,3 +38,5 @@ GH_TOKEN
 *.knit.md
 .Rproj.user
 packrat/lib*/
+_site
+.jekyll-metadata
