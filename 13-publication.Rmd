@@ -19,12 +19,16 @@ Whilst there are no hard and fast rules on how to structure Rmarkdown documents,
 
 Inline code looks like this:
 
-> The measure of interest increased by `r measure`% in the first year. 
+```
+The measure of interest increased by `r measure`% in the first year. 
+```
 
 where `measure` is an R variable that contains the value of interest.
 Whilst the above is fine, the below should absolutely be avoided:
 
-> The intercept of the model was `r coef(lm(mpg ~ wt, data = mtcars))[1]`.
+```
+The intercept of the model was `r coef(lm(mpg ~ wt, data = mtcars))[1]`.
+```
 
 The reason for avoiding more complex statements in inline code is that it becomes extremely difficult to debug them if there is a problem.
 If compilation of your document fails as a result of inline code, you are not generally notified of where the error occurred, which means that you will need to go through each inline code statement in turn to find the error.
