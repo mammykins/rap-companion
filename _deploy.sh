@@ -8,7 +8,7 @@ git config --global user.name ${USERNAME}
 # Ensure that the book will only be updated when the build is 
 # triggered from the master branch.
 
-[ "${TRAVIS_BRANCH}" != "master" ] && exit 0
+#[ "${TRAVIS_BRANCH}" != "master" ] && exit 0
 
 # Clone the repository to the book-output directory
 
@@ -29,5 +29,5 @@ touch book-output/.nojekyll
 
 cd book-output
 git add . -f
-git commit -m "Automatic build update" || true
-git push origin gh-pages
+git commit -m "Automatic build update" || exit 1
+#git push origin gh-pages
