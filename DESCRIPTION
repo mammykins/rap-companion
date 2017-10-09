@@ -9,7 +9,8 @@ Suggests:
     knitr (>= 1.15.1),
     rmarkdown (>= 1.2),
     govstyle (>= 0.1.0),
-    devtools (>= 1.12.0)
+    devtools (>= 1.12.0),
+    futile.logger (>= 1.4.3)
 Remotes: github::UKGov-Data-Science/eesectors
 Depends:
     R (>= 3.3.1)
