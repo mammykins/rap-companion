@@ -114,7 +114,9 @@ We think about how to adapt our earlier code to this function. The primary use c
 
 We demonstrate this hierarchy below by evaluating this code.
 
+
 ```{r eval=FALSE}
+
 # library(futile.logger)
 
 futile.logger::flog.debug("This won't print") 
@@ -133,7 +135,9 @@ x <- c("culture", "sport", NA)
 
 We start by re-writing the above code using the `futile.logger` high level interface. As the default setting is at the INFO log level we can use `flog.trace` to hide most of the checks and messages from a typical user.    
 
+
 ```{r eval = FALSE, error=TRUE}
+
 # Data from raw has an error
 x <- c("culture", "sport", NA)
 
