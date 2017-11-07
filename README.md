@@ -1,6 +1,6 @@
 [![Build Status](https://travis-ci.org/ukgovdatascience/rap_companion.svg?branch=master)](https://travis-ci.org/ukgovdatascience/rap_companion)
 
-[Reproducible Analytical Pipeline Companion](https://ukgovdatascience.github.io/rap_companion/) <img src="images/rap_hex.png" align="right" width="100" height="100" />  
+[Reproducible Analytical Pipeline Companion](https://ukgovdatascience.github.io/rap_companion/) <img src="images/rap_hex.png" align="right" width="200" height="200" />  
 ==========================================
 
 **This is a prototype and subject to constant development**
