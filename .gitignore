@@ -40,3 +40,4 @@ GH_TOKEN
 packrat/lib*/
 _site
 .jekyll-metadata
+packrat

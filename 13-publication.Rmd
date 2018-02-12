@@ -7,6 +7,44 @@ Everything I have talked about so far is to do with the production of the statis
 
 Working in this way means that we can do all of the operations in a single file, so we have no problems with ensuring that our tables or figures are synced with the latest version of the text: everything can be produced in a single file. We can even produce templates with boilerplate text like: ‘this measure increased by X%’, and then automatically populate the X with the correct values when we run the code.
 
+## Organising Rmarkdown documents
+
+When producing a publication for the first time using Rmarkdown following the RAP model, a common question is: 'how should I organise the my Rmarkdown document?' - that is how should the mixture of R and markdown be structured? This section provides some suggestions on how to structure these documents.
+
+### Code chunks versus inline code
+
+Whilst there are no hard and fast rules on how to structure Rmarkdown documents, the closest is this:
+
+> Don't rely on inline code for complex code.
+
+Inline code looks like this:
+
+```
+The measure of interest increased by `r measure`% in the first year. 
+```
+
+where `measure` is an R variable that contains the value of interest.
+Whilst the above is fine, the below should absolutely be avoided:
+
+```
+The intercept of the model was `r coef(lm(mpg ~ wt, data = mtcars))[1]`.
+```
+
+The reason for avoiding more complex statements in inline code is that it becomes extremely difficult to debug them if there is a problem.
+If compilation of your document fails as a result of inline code, you are not generally notified of where the error occurred, which means that you will need to go through each inline code statement in turn to find the error.
+
+If on the other hand you assign variables in a code chunk before you call the variable in inline code, you will be notified exactly where the code has failed, and debugging becomes trivial.
+
+An equivalent code chunk to the aboce example might look like this:
+
+>```{r} 
+>coef1 <- coef(lm(mpg ~ wt, data=mtcars))[1]
+>```
+
+The inline code that follows would be:
+
+> The intercept of the model was `r coef1`.
+
 ## Further Reading
 
 You can write individual chapters using [R markdown](http://r4ds.had.co.nz/r-markdown.html), as one file per Chapter.  
