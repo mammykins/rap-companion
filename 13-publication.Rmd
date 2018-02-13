@@ -144,7 +144,9 @@ That will hide the code by default, so only showing the chunks you deliberately 
 
 ### Inline code
 
-Often a report might have statistics within a sentence of prose. There is a way to embed R code into prose, with:  `r inline()`. This can be very useful if you mention properties of your data in the text. You might want to write functions that prettify to create the desired kind of output (i.e. rounding to two digits and a % suffixed).  
+Often a report might have statistics within a sentence of prose. There is a way to embed R code into prose, with [inline code](https://rmarkdown.rstudio.com/lesson-4.html). This can be very useful if you mention properties of your data in the text. You might want to write functions that prettify to create the desired kind of output (i.e. rounding to two digits and a % suffixed).  
+
+Inline output is indistinguishable from the surrounding text. Inline expressions do not take knitr options.
 
 ## YAML header
 
